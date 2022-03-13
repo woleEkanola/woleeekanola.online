@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+body {
+    background-color: rgb(17, 14, 14);
+    color: white;
+    font-family: 'Spartan', sans-serif;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.main {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.abt {
+    width: 1000px;
+    overflow: hidden;
+}
+
+.slider {
+    padding-bottom: 10px;
+    height: 850px;
+    width: 3200px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0px;
+    transition: margin-left 2s cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+
+.slide {
+    min-width: 1000px;
+    margin: auto;
+    padding-left: 120px;
+    /* background-color: antiquewhite; */
+}
+
+.wrapper {
+    background-color: rgb(2, 1, 1);
+    width: 100%;
+    height: 90vh;
+    margin-top: 40px;
+}
+
+.projects {
+    margin-left: 10px;
+}
+
+.grd {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 170px;
+}
+
+.wrap img {
+    width: 100%;
+}
+
+.wrap div {
+    margin-left: 45px;
+}
+
+.svg h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: medium;
+    margin-left: 75px;
+    margin-bottom: -5px;
+}
+
+.svg ul {
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.svg svg {
+    margin-top: 25px;
+}
+
+.svg li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 0px;
+    padding: 5px 10px;
+    margin-left: 7px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bolder
+}
+
+.violet {
+    background-color: blueviolet;
+}
+
+.orange {
+    background-color: rgb(240, 167, 10);
+    color: rgb(2, 1, 1);
+}
+
+.green {
+    background-color: rgb(44, 221, 21);
+    color: rgb(2, 1, 1);
+}
+
+.txt {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.txt p {
+    font-size: 12px;
+    line-height: 22px;
+    color: antiquewhite;
+}
+
+nav {
+    position: fixed;
+    top: 7%;
+    display: grid;
+    width: 68vw;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 50px;
+}
+
+nav i {
+    color: white;
+    margin-left: 10px;
+    font-size: 20px !important;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 250px;
+}
+
+nav li {
+    display: inline;
+    margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.banner {
+    margin-top: 100px;
+    margin-left: 0px !important;
+    width: 1000px;
+}
+
+.cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    background-color: rgb(17, 14, 14);
+    width: 150px !important;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px !important;
+    /* text-align: center; */
+}
+
+.card img {
+    width: 150px;
+}
+
+.line {
+    width: 800px;
+}
+
+.line ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -12px;
+    align-self: center;
+}
+
+.line li {
+    margin-left: 3px;
+    margin-top: 3px;
+    background-color: rgb(255, 238, 0);
+    padding: 4px;
+    color: black;
+    font-size: 11px;
+}
+
+.flxbox {
+    margin: 0px !important;
+    display: flex;
+}
+
+.flxbox input {
+    margin-left: auto;
+    padding: 10px 15px;
+}
+
+.active {
+    color: yellow;
+    border-bottom: 1px solid rgb(235, 182, 9);
+    padding-bottom: 10px;
+}
