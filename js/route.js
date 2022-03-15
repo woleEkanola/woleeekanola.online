@@ -18,7 +18,7 @@ function setCurrRoute() {
     var y = window.location.hash.split('#')
     var x = y[1]
     router.history.push(router.current == '' ? 'about-me' : router.current)
-    router.current = x.length == 0 ? 'about-me' : x
+    router.current = x ? 'about-me' : x
     return x
 }
 
