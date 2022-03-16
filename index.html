@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="setCurrRoute()">
 
     <nav>
         <div class="icons">
@@ -49,7 +49,7 @@
         </ul>
 
     </nav>
-    <div class="main">
+    <!-- <div class="main">
 
         <div class="wrapper abt">
             <div class="slider" id="sld">
@@ -493,10 +493,27 @@
 
         </div>
 
+    </div> -->
+
+    <div class="mainWrapper">
+        <div class="sections" id="webview">
+            <div class="wideContainer" id="sld">
+                <div class="containers black" id="about-me">
+                    about
+                </div>
+
+                <div class="containers violet" id="tech-stack">tech</div>
+                <div class="containers orange" id="projects"> project</div>
+                <div class="containers wine" id="courses"> courses</div>
+                <div class="containers black" id="contact-me"> contact</div>
+
+            </div>
+        </div>
+        <div class="sections black" id="showcaseview"></div>
     </div>
     <script src="./js/route.js"></script>
     <script src="./js/app.js"></script>
-    <script src="./js/xno.js"></script>
+    <!-- <script src="./js/xno.js"></script> -->
 </body>
 
 </html>
