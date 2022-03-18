@@ -4,6 +4,9 @@
 // change the uri value
 // switch the view accordingly
 var slider = document.getElementById('sld')
+var wdt = function(x) {
+    return x.offsetWidth
+}
 
 const router = {
     locations: ['about-me', 'tech-stack', 'projects', 'courses', 'contact-me'],
@@ -26,43 +29,33 @@ function setCurrRoute() {
 
 function switchRoute(x) {
 
-    // if (router.locations.indexOf(x) >= 0) {
+    console.log(wdt(slider))
 
-    //     router.locations.forEach(lc => {
-    //         if (lc == x) {
-    //             console.log(x)
-    //             let y = document.getElementById(x)
-    //             console.log(y)
-    //             y.style.display = 'block'
-    //                 // y.style.left = '0 !important'
-    //         } else {
-    //             let y = document.getElementById(x)
-    //             y.style.display = 'none'
-    //                 // y.style.left = '600%'
-    //         }
-    //     })
-
-    // }
-    //  `${? 0: () + (router.locations.indexOf(x) * 100)}px`
 
     switch (x) {
 
-        case router.locations[0]:
-            slider.style.marginLeft = '0%'
+        case 'about-me':
+            slider.style.transform = `translateX(0)`
             break
 
-        case router.locations[1]:
-            slider.style.marginLeft = '-100%'
+        case 'tech-stack':
+            slider.style.transform = `translateX(-${(wdt(slider)/5) * 1 })`
+            console.log(`-${(wdt(slider)/5) * 1 }px`)
             break
 
-        case router.locations[2]:
-            slider.style.marginLeft = '-200%'
+        case 'projects':
+            slider.style.marginLeft = `translateX(-${(wdt(slider)/5) * 2 })`
+            console.log(`-${(wdt(slider)/5) * 2 }px`)
             break
-        case router.locations[3]:
-            slider.style.marginLeft = '-300%'
+        case 'courses':
+
+            slider.style.transform = `translateX(-${(wdt(slider)/5) * 3 })`
+            console.log(`-${(wdt(slider)/5) * 3 }px`)
+
             break
-        case router.locations[4]:
-            slider.style.marginLeft = '-400%'
+        case 'contact-me':
+            slider.style.transform = `translateX(-${(wdt(slider)/5) * 4 })`
+            console.log(`-${(wdt(slider)/5) * 4 } px`)
             break
 
 
@@ -72,6 +65,6 @@ function switchRoute(x) {
 
 
 
-window.addEventListener('popstate', function(e) {
+window.addEventListener('hashchange', function(e) {
     setCurrRoute()
 })
