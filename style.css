@@ -19,7 +19,7 @@ nav {
     position: fixed;
     top: 7%;
     display: grid;
-    width: 55vw;
+    width: 67vw;
     grid-template-columns: 1fr 2fr;
     margin-left: 50px;
     z-index: 100000;
