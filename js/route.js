@@ -26,37 +26,39 @@ function setCurrRoute() {
     switchRoute(x)
 }
 
+function cal(x) {
+    return `translate(-${(wdt(slider)/5) * x}px)`
+}
 
 function switchRoute(x) {
 
-    console.log(wdt(slider))
 
 
     switch (x) {
 
         case 'about-me':
-            slider.style.transform = `translateX(0)`
+            slider.style.transform = `translateX(0%)`
             break
 
         case 'tech-stack':
-            slider.style.transform = `translateX(-${(wdt(slider)/5) * 1 })`
-            console.log(`-${(wdt(slider)/5) * 1 }px`)
+            slider.style.transform = cal(1)
+            console.log(cal(1))
             break
 
         case 'projects':
-            slider.style.marginLeft = `translateX(-${(wdt(slider)/5) * 2 })`
-            console.log(`-${(wdt(slider)/5) * 2 }px`)
+            slider.style.marginLeft = cal(2)
+            console.log(cal(2))
             break
         case 'courses':
 
-            slider.style.transform = `translateX(-${(wdt(slider)/5) * 3 })`
-            console.log(`-${(wdt(slider)/5) * 3 }px`)
+            slider.style.transform = cal(3)
+            console.log(cal(3))
 
             break
         case 'contact-me':
-            slider.style.transform = `translateX(-${(wdt(slider)/5) * 4 })`
-            console.log(`-${(wdt(slider)/5) * 4 } px`)
-            break
+            slider.style.transform = cal(4)
+            console.log(cal(4))
+
 
 
     }
@@ -65,6 +67,6 @@ function switchRoute(x) {
 
 
 
-window.addEventListener('hashchange', function(e) {
+window.addEventListener('popstate', function(e) {
     setCurrRoute()
 })
