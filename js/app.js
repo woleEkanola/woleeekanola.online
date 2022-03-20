@@ -30,11 +30,14 @@ function launch(x) {
         div.innerHTML = j
         target.appendChild(div)
     } else {
+        let canva = document.createElement('canvas')
+        canva.id = x
 
+        // let js = document.createElement('script')
+        // js.src = `./${x}.js`
+        target.appendChild(canva)
+            // target.appendChild(js)
     }
 
-    let canva = document.createElement('canvas')
-    canva.id = x
 
-    target.appendChild(canva)
 }

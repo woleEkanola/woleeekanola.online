@@ -243,3 +243,11 @@ nav li {
 canvas {
     background-color: aliceblue;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
