@@ -27,7 +27,7 @@ function setCurrRoute() {
 }
 
 function cal(x) {
-    return `translate(-${(wdt(slider)/5) * x}px)`
+    return `translateX(-${(((wdt(slider)/5) * x)/wdt(slider))*100})`
 }
 
 function switchRoute(x) {
@@ -37,7 +37,7 @@ function switchRoute(x) {
     switch (x) {
 
         case 'about-me':
-            slider.style.transform = `translateX(0%)`
+            slider.style.transform = `translateX(0)`
             break
 
         case 'tech-stack':
