@@ -1,6 +1,5 @@
 #gameboard {
-    width: 60vw;
-    height: 740px;
+    width: 100%;
     /* background: rgb(151, 137, 11); */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -9,13 +8,14 @@
 
 .gameCell {
     width: 95%;
-    height: 220px;
+    height: 100px;
     /* background: rgba(206, 201, 201, 0.74); */
     margin: 10px;
     text-align: center;
     font-size: 90px;
     line-height: 190px;
-    border: 3px solid gray
+    border: 3px solid gray;
+    color: aliceblue;
 }
 
 .x {
