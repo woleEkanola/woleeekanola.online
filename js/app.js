@@ -12,3 +12,25 @@ document.addEventListener('click', e => {
 
 
 })
+let counter = 1
+let imgSlider = 2
+let imge = document.getElementById('tst')
+function changepix(){
+
+    if(counter % 1000 === 0){
+
+        if(imgSlider <=4){
+            imge.src = `./img/wole${imgSlider}.jpg`
+        }else{
+            imgSlider = 1
+            imge.src = `./img/wole${imgSlider}.jpg`
+        }
+        imgSlider ++
+    }
+
+counter ++
+// console.log(imgSlider + ' - ' + counter)
+requestAnimationFrame(changepix)
+}
+
+changepix()
