@@ -140,21 +140,21 @@ nav li {
 }
 
 .violet {
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.226);
 }
 
 .orange {
-    background-color: rgb(240, 167, 10);
+    background-color: rgba(240, 167, 10, 0.233);
     color: rgb(2, 1, 1);
 }
 
 .green {
-    background-color: rgb(44, 221, 21);
+    background-color: rgba(44, 221, 21, 0.247);
     color: rgb(2, 1, 1);
 }
 
 .wine {
-    background-color: rgb(87, 6, 20);
+    background-color: rgba(87, 6, 19, 0.288);
 }
 
 .black {
@@ -162,11 +162,11 @@ nav li {
 }
 
 .pink {
-    background-color: pink;
+    background-color: rgba(255, 192, 203, 0.192);
 }
 
 .blue {
-    background-color: rgb(3, 49, 109);
+    background-color: rgba(3, 49, 109, 0.219);
 }
 
 .dkgreen {
@@ -251,3 +251,54 @@ canvas {
 .show {
     display: block !important;
 }
+
+#showcaseview span {
+    padding: 10px 5px;
+    color: aliceblue;
+    font-size: 30px !important;
+}
+
+#showcaseview {
+    margin-top: 60px;
+}
+
+.showcase {
+    /* margin-top: 30px; */
+    transition: height 300ms ease-in-out;
+}
+
+.prjwrp {
+    width: 90%;
+    margin: auto;
+    font-size: 10px;
+    color: rgba(250, 235, 215, 0.377);
+}
+
+.prjwrp h3 {
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+.showcase h2 {
+    cursor: pointer;
+    background-color: rgba(80, 79, 79, 0.109);
+    padding: 10px 8px;
+}
+
+.prjwrp p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: -15px;
+}
+
+hr {
+    margin-top: 50px;
+    color: antiquewhite;
+}
+
+
+/* 
+    .game,
+    .video {
+        height: 0px;
+    } */

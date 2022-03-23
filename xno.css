@@ -1,0 +1,58 @@
+#gameboard {
+    width: 60vw;
+    height: 740px;
+    /* background: rgb(151, 137, 11); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.gameCell {
+    width: 95%;
+    height: 220px;
+    /* background: rgba(206, 201, 201, 0.74); */
+    margin: 10px;
+    text-align: center;
+    font-size: 90px;
+    line-height: 190px;
+    border: 3px solid gray
+}
+
+.x {
+    background-color: rgba(24, 188, 238, 0.226);
+    color: black;
+    font-size: 80px;
+    border-radius: 10px;
+    border: none;
+}
+
+.o {
+    background-color: rgba(238, 92, 24, 0.226);
+    color: black;
+    border-radius: 10px;
+    font-size: 80px;
+    border: none;
+}
+
+.winO {
+    background-color: rgb(238, 92, 24);
+    color: white;
+    box-shadow: 2px 3px 6px black;
+}
+
+.winX {
+    background-color: rgb(24, 188, 238);
+    color: white;
+    box-shadow: 2px 3px 6px black;
+}
+
+.containr {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.containr div {
+    width: 100%;
+}
+
+.msg {}

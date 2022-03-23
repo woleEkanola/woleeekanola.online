@@ -1,12 +1,12 @@
 // canvas setup
-const canvas = document.getElementById('bubbleburster')
+const canvas = document.getElementById('c')
 const ctx = canvas.getContext('2d')
 canvas.width = 400
-canvas.height = 400
-
+canvas.height = 250
+play=false
 let score = 0
 let gameFrame = 0
-ctx.font = '15px Georgia'
+ctx.font = '18px Georgia'
 
 //mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect()
@@ -29,7 +29,7 @@ class Player {
     constructor() {
         this.x = canvas.width
         this.y = canvas.height / 2
-        this.radius = 30;
+        this.radius = 17;
         this.angle = 0
         this.frameX = 0
         this.frameY = 0
@@ -73,7 +73,7 @@ class Bubble {
     constructor() {
         this.x = Math.random() * canvas.width
         this.y = canvas.height + 100
-        this.radius = 30
+        this.radius = 17
         this.speed = Math.random() * 5 + 1
         this.distance
         this.counted = false
@@ -121,14 +121,30 @@ function handleBubbles() {
 }
 
 function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
-    handleBubbles()
-    player.update()
-    player.draw()
-    ctx.fillStyle = 'black'
-    ctx.fillText('Score: ' + score, 10, 50)
-    gameFrame++
+    if(play){
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        handleBubbles()
+        player.update()
+        player.draw()
+        ctx.fillStyle = 'black'
+        ctx.fillText('Score: ' + score, 10, 20)
+        gameFrame++
+}else{
+    ctx.font = '20px Georgia'
+
+    ctx.fillStyle = 'purple'
+        ctx.fillText(' Press "Enter" to start the Game' , 50, 120)
+}
+
     requestAnimationFrame(animate)
 
 }
 animate()
+
+document.addEventListener('keydown',function(e){
+    console.log(e.key)
+    if(e.key == 'Enter'){
+        play = true
+    }
+})
