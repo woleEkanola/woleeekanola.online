@@ -206,6 +206,8 @@ nav li {
     width: 97%;
     margin-left: 15px;
     padding: 10px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .banner h1 {
