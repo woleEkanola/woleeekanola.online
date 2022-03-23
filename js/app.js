@@ -20,10 +20,10 @@ function changepix(){
     if(counter % 1000 === 0){
 
         if(imgSlider <=4){
-            imge.src = `./wole${imgSlider}.jpg`
+            imge.src = `./img/wole${imgSlider}.jpg`
         }else{
             imgSlider = 1
-            imge.src = `./wole${imgSlider}.jpg`
+            imge.src = `./img/wole${imgSlider}.jpg`
         }
         imgSlider ++
     }
