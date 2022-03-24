@@ -264,7 +264,10 @@ canvas {
 #showcaseview span {
     padding: 10px 5px;
     color: white;
+}
+#showcaseview h2{
     font-size: 30px !important;
+
 }
 
 #showcaseview {
@@ -310,8 +313,82 @@ hr {
     overflow: hidden;
 }
 
+
 /* 
     .game,
     .video {
         height: 0px;
     } */
+
+    @media only screen and (max-width: 1200px) {
+       .mainWrapper{
+           display: block;
+       }
+       #webview {
+        width: 100vw;
+        /* overflow: hidden; */
+    }
+    .containers {
+        width: 100vw;
+        height: 100vh !important;
+        overflow: scroll;
+    }
+    .sldWrap { 
+        width: 80%;
+        margin: auto;
+        margin-left: 120px;
+        margin-top: 200px;
+    }
+    .grd img {
+        width: 70%;
+    }
+    .svg {
+        margin-left: 0px;
+    }
+    nav{
+        width: 100vw;
+    }
+    nav ul {
+        list-style: none;
+        margin-left: 240px;
+    }
+
+    #showcaseview{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0px;
+        padding: 0px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-top: 0px;
+        padding-top: 90px;
+        margin-left: -120%;
+        transition: margin-left ease-in 500ms  200ms;
+    }
+    .shwcs{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        z-index: 9999999999;
+        padding: 5px 10px;
+        background-color: rgba(0, 0, 0, 0.212);
+    }
+    .shwcs h3{
+        font-size: 15px !important;
+    }
+
+
+
+    }
+  
+    
+
+
+
+
+    

@@ -34,3 +34,23 @@ requestAnimationFrame(changepix)
 }
 
 changepix()
+
+
+let showcasebtn = document.getElementById('showcasebtn')
+let showcaseview = document.getElementById('showcaseview') 
+let shown = false
+
+showcasebtn.addEventListener('click', function(e){
+    if(shown){
+        showcaseview.style.marginLeft = '-120%'
+        showcasebtn.innerHTML = `<span class="violet">SHOW</span><span class="wine">CASE</span>`
+
+    }else{
+        showcaseview.style.marginLeft ='0%'
+        showcasebtn.innerHTML =  'Close Showcase'
+
+    
+    }
+    shown  = !shown
+
+})
