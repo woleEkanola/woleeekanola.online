@@ -8,6 +8,7 @@ var wdt = function(x) {
     return x.offsetWidth
 }
 
+
 const router = {
     locations: ['about-me', 'tech-stack', 'projects', 'courses', 'contact-me'],
     current: '',
@@ -22,7 +23,6 @@ function setCurrRoute() {
     var x = y[1]
     router.history.push(router.current == '' ? 'about-me' : router.current)
     router.current == x ? 'about-me' : x
-    console.log(x)
     switchRoute(x)
 }
 
