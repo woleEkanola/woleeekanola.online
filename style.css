@@ -70,11 +70,10 @@ nav li {
     width: 67vw;
     overflow: hidden;
 }
-
 .sldWrap {
     width: 70%;
     margin-left: 120px;
-    margin-top: 200px;
+    margin-top: 180px;
 }
 
 .wideContainer {
@@ -134,13 +133,13 @@ nav li {
 }
 
 .txt {
-    width: 95%;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .txt p {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 25px;
     color: antiquewhite;
 }
 
@@ -321,7 +320,33 @@ hr {
 .shwcs{
     display: none;
 }
+.techStack{
+    padding: 0px;
+    margin: 0px;
+}
+.techStack li {
+    background-color: rgba(29, 28, 28, 0.219);
+    list-style: none;
+    margin-top: 4px;
+    padding: 6px 10px;
+    display: inline-block;
+  
+}
+.techStack li:hover{
+    background-color: rgba(211, 180, 2, 0.322);
+}
 
+#cntct{
+    width: 80%;
+    margin: auto;
+}
+
+#cntct input, #cntct textarea{
+display: block;
+width: 100%;
+margin-top: 10px;
+padding: 10px;
+}
 /* 
     .game,
     .video {
