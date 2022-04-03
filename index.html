@@ -550,8 +550,22 @@
                 <div class="showcase" id="snakee">
                     <h2 class="title wine">Snakee</h2>
                     <div class="game hide">
+                      <div class="contrls">  
+                         <p id="gameStart" >Start</p> 
+                         <p id="gameStop" >Stop</p></div>
+                      <h3>Score <span class="score"></span></h3>
+                      
+                      <h3>Highest Score: <span class="highScore"></span></h3>
+                        <canvas id="snk"></canvas>
+                        <div class="info">
+                          <p>Hi Welcome, lets plays some oldschool SNAKEE GAME...</p>
+                          <p>To control the snake use the arrow up, down, left and right keys. Press Start to start</p>
+                          </div>
 
-                        <canvas id="snakee"></canvas>
+                          <div class="controls">
+                            <p id="left">Lft</p> <p id="right">Rt</p>
+                            <p id="up">Up</p> <p id="down">Dwn</p>
+                            </div>
                     </div>
                 </div>
                 <hr>
@@ -579,6 +593,7 @@
     <script src="./js/route.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/brickbraker.js"></script>
+    <script src="./js/snakee.js"></script>
     <script src="./js/xno.js"></script>
 </body>
 

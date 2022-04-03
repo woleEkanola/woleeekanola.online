@@ -294,6 +294,21 @@ canvas {
  
 }
 
+#snk{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    background: url("./img/bg.gif");
+    background-repeat: repeat;
+    padding: 2px
+}
+
+.contrls p{
+display: inline;
+background-color: orangered;
+padding: 4px 7px;
+cursor: pointer;
+}
 
 .showcase h2 {
     cursor: pointer;
