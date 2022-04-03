@@ -336,12 +336,15 @@ hr {
     background-color: rgba(211, 180, 2, 0.322);
 }
 
-#cntct{
+#cntct, .subscribe{
     width: 80%;
     margin: auto;
 }
+.subscribe{
+    margin-left: 0px;
+}
 
-#cntct input, #cntct textarea{
+#cntct input, #cntct textarea, .subscribe input{
 display: block;
 width: 100%;
 margin-top: 10px;
