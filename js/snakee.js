@@ -75,9 +75,11 @@ let stop =  document.getElementById('gameStop')
 c= cnv.getContext('2d')
 
 function drawTarget(){
-    c.fillStyle = 'purple'
+    let apple = new Image();
+    apple.src = './img/apple.png';
+    c.drawImage(apple, pxl*trgtLoc.x, pxl*trgtLoc.y, pxl, pxl)
  
-    c.fillRect(pxl*trgtLoc.x, pxl*trgtLoc.y, pxl, pxl)
+  
 }
 
 function drawLine(strtX, strtY, toX, toY,){
