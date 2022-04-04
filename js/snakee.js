@@ -22,7 +22,7 @@ let snake= []
  snake[1]= {x:1, y:0}
  snake[2]= {x:2, y:0}
  
-const pxl = 20
+var pxl = 20
 
 let scr = 0
 let highScore = 0
@@ -129,11 +129,14 @@ c.fillStyle = color
 let img
 if (i==cc-1){
     c.fillStyle = 'green';
-    img = head
+ 
+    c.drawImage(head, pxl*snake[i].x, pxl*snake[i].y, pxl, pxl);
+
 }else{
-img = body
+
+c.drawImage(body, pxl*snake[i].x, pxl*snake[i].y, pxl, pxl);
+
 }
-c.drawImage(img, pxl*snake[i].x, pxl*snake[i].y, pxl, pxl);
 // c.fillRect(pxl*snake[i].x, pxl*snake[i].y, pxl, pxl)
 // c.stroke()
 }
