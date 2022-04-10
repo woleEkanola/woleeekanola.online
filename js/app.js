@@ -54,3 +54,44 @@ showcasebtn.addEventListener('click', function(e){
     shown  = !shown
 
 })
+
+const url ='http://localhost:1337'
+fetch(`${url}/api/projects?populate=image`)
+  .then(response => response.json())
+  .then(data => displayProjects(data.data));
+
+  let tagt = document.getElementById('projectDiv')
+  function displayProjects(projects){
+      
+      if(projects){
+
+          projects.forEach(project =>{
+            console.log(project)
+    
+              let dv = document.createElement('div')
+              dv.className = 'card line clk'
+              let x = `
+              <div class='img-mask clk ${project.attributes.id}'>
+              <img class='clk ${project.attributes.id}' src="${url+project.attributes.image.data[0].attributes.url}" alt="">
+              </div>
+              <h3 class='clk ${project.attributes.id}'>${project.attributes.Name}</h3>
+    `
+    dv.innerHTML = x
+    tagt.appendChild(dv)
+          })
+      }else{
+          let el = document.createElement('p')
+          el.innerHTML = 'My projects will be uploaded shortly, for now click on the showcase button to view a selected few'
+      tagt.appendChild(el)
+        }
+
+  }
+
+  tagt.addEventListener('click', function(e){
+
+      if(e.target.classList.contains('clk')){
+        console.log('hello')
+
+    }
+
+  })
