@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.container img{
+    width: 100%;
+}
+.top{
+    width: 70% !important;
+    margin-top: -80px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inputbox{
+    color:#030303;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1.1rem;
+    font-weight: 500;
+  outline:none;
+}
+.button{
+    background-color: rgb(46, 129, 232);
+    padding: 15px 20px;
+    border: none;
+    color: aliceblue;
+    font-size: 25px;
+}
+form{
+    width: 80%;
+    
+    margin: 80px auto;
+
+    margin-top: 450px;
+}

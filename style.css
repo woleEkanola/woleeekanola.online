@@ -9,6 +9,25 @@
 .img-mask img{
 height: 130px;
 width: auto !important;
+
+}
+.wb{
+    width: 50%;
+    cursor: pointer;
+}
+
+.wb:hover{
+box-shadow: 2px 3px 8px black;
+}
+#modal{
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    z-index: 1000000000000000000000000000;
+    width: 63%;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.685);
+    transform: translateY(-50%);
 }
 
 body {
@@ -569,6 +588,23 @@ margin-top: 10px;
         }
     }
   
+    .inputbox
+    {
+        color:#030303;
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1.5px solid #ccc;
+        margin-bottom: 1rem;
+        border-radius: 0.3rem;
+        font-family: 'Roboto', sans-serif;
+        color: #615a5a;
+        font-size: 1.1rem;
+        font-weight: 500;
+      outline:none;
+    }
+    
+
     
 
 

@@ -58,15 +58,17 @@ showcasebtn.addEventListener('click', function(e){
 const url ='http://localhost:1337'
 fetch(`${url}/api/projects?populate=image`)
   .then(response => response.json())
-  .then(data => displayProjects(data.data));
+  .then(data => displayProjects(data.data)).catch(err =>{
+      displayProjects([])
+  });
 
   let tagt = document.getElementById('projectDiv')
   function displayProjects(projects){
       
-      if(projects){
+      console.log(projects)
+      if(projects.lenght > 0){
 
           projects.forEach(project =>{
-            console.log(project)
     
               let dv = document.createElement('div')
               dv.className = 'card line clk'
