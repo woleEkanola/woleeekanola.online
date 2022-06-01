@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wole Ekanola - Vidrol </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <style>
+
+        body{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        img{
+            width: 15%;
+            margin-top: 10%;
+        }
+        a{
+            display: block;
+            text-decoration: underline;
+            color: black;
+        }
+        span{
+            font-size: 13px;
+           color: brown;
+        }
+    </style>
+
+</head>
+
+<body >
+    <img src="./vdroll.png" alt="Vidrol">
+    <h1>VIDROL <span>{Beta}</span></h1>
+    <p>A Desktop application that allows you continue watching a video while you do other things on you system unhindered</p>
+<a href="https://drive.google.com/uc?export=download&id=1Iya4sDDGxApeYcPIG76d_qW9kBP5c7b8" target="blank"  download id="win32">download Vidrol - Windox-32Bit</a>
+<a href="https://drive.google.com/uc?export=download&id=1aPXwkNWMuqakv_yF9XX3jguJ2sDDPvZv" target="blank" download id="win64">download Vidrol - Windox-64Bit</a>
+
+<p>Send a mail to <b>woleekanola@gmail.com</b> to request download for other platforms </p>
+
+<script>
+        if (navigator.userAgent.indexOf("WOW64") != -1 || 
+        navigator.userAgent.indexOf("Win64") != -1 ){
+     document.querySelector('#win32').href = ''
+     document.querySelector('#win32').download = false
+     document.querySelector('#win34').style.textDecoration ='none'
+    } else if(navigator.userAgent.indexOf("WOW32") != -1 || 
+        navigator.userAgent.indexOf("Win32") != -1 ){
+            document.querySelector('#win64').href = ''
+            document.querySelector('#win64').download = false
+            document.querySelector('#win64').style.textDecoration ='none'
+
+    }else{
+        document.querySelector('#win64').href = ''
+        document.querySelector('#win32').href = ''
+        alert('Only Windows version is available for download at the moment, send a mail to woleekanola@gmail.com to request for your operating system')
+    }
+</script>
+
+
+</body>
+
+</html>
